@@ -341,4 +341,16 @@
      
     </footer>
   </body>
+  <script>
+  const burgerMenu = document.querySelector('.btn');
+  const navMenu = document.querySelector('nav ul');
+
+  // Add an event listener for the burger menu click
+  burgerMenu.addEventListener('click', () => {
+    if (window.innerWidth <= 400) { // Check if the screen width is 400px or less
+      navMenu.classList.toggle('show');
+    }
+  });
+</script>
+
 </html>
